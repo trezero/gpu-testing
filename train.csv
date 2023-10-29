@@ -1,0 +1,121 @@
+Question,Answer,Instruction,text
+How can I print a string in Python?,"You can use the print() function. For example: print('Hello, World!')",Generate Python code to print a string.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Generate Python code to print a string.
+### Input:
+How can I print a string in Python?
+### Response:
+You can use the print() function. For example: print('Hello, World!')"
+What does the 'def' keyword in Python mean?,The 'def' keyword is used to define a function in Python.,Describe the purpose of the 'def' keyword in Python.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Describe the purpose of the 'def' keyword in Python.
+### Input:
+What does the 'def' keyword in Python mean?
+### Response:
+The 'def' keyword is used to define a function in Python."
+How do I concatenate two strings?,You can use the + operator. For example: 'Hello' + 'World' will produce 'HelloWorld'.,Provide a Python example that concatenates two strings.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Provide a Python example that concatenates two strings.
+### Input:
+How do I concatenate two strings?
+### Response:
+You can use the + operator. For example: 'Hello' + 'World' will produce 'HelloWorld'."
+How to get the length of a list in Python?,"Use the len() function. For example: len([1, 2, 3]) will return 3.",Demonstrate how to get the length of a list in Python.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Demonstrate how to get the length of a list in Python.
+### Input:
+How to get the length of a list in Python?
+### Response:
+Use the len() function. For example: len([1, 2, 3]) will return 3."
+How can I add an item to a list?,You can use the append() method of a list. For example: myList.append('new_item').,Show how to add an item to a Python list.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Show how to add an item to a Python list.
+### Input:
+How can I add an item to a list?
+### Response:
+You can use the append() method of a list. For example: myList.append('new_item')."
+What's the difference between a tuple and a list?,"In Python, lists are mutable while tuples are immutable. This means you can modify a list, but not a tuple.",Differentiate between a tuple and a list in Python.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Differentiate between a tuple and a list in Python.
+### Input:
+What's the difference between a tuple and a list?
+### Response:
+In Python, lists are mutable while tuples are immutable. This means you can modify a list, but not a tuple."
+How to check if a value is in a list?,You can use the 'in' keyword. For example: if 'apple' in fruitsList: print('Apple is in the list').,Illustrate how to check for an item's presence in a list.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Illustrate how to check for an item's presence in a list.
+### Input:
+How to check if a value is in a list?
+### Response:
+You can use the 'in' keyword. For example: if 'apple' in fruitsList: print('Apple is in the list')."
+How do I create a dictionary in Python?,"Use curly braces {}. For example: myDict = {'key1': 'value1', 'key2': 'value2'}.",Guide on creating a dictionary in Python.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Guide on creating a dictionary in Python.
+### Input:
+How do I create a dictionary in Python?
+### Response:
+Use curly braces {}. For example: myDict = {'key1': 'value1', 'key2': 'value2'}."
+How to iterate over a dictionary?,"You can use a for loop. For example: for key, value in myDict.items(): print(key, value).",Provide a method to loop through a dictionary in Python.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Provide a method to loop through a dictionary in Python.
+### Input:
+How to iterate over a dictionary?
+### Response:
+You can use a for loop. For example: for key, value in myDict.items(): print(key, value)."
+How can I read a file in Python?,"Use the open() function with the 'r' mode. For example: with open('filename.txt', 'r') as file: content = file.read().",Explain how to read a file in Python.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Explain how to read a file in Python.
+### Input:
+How can I read a file in Python?
+### Response:
+Use the open() function with the 'r' mode. For example: with open('filename.txt', 'r') as file: content = file.read()."
+"What does 'if __name__ == \__main__\"":' mean?""","It's a Python idiom. If a Python script is run, the '__name__' variable is set to '__main__'. This line checks if the script is being run as the main program.","Clarify the purpose of the 'if __name__ == \__main__\"":' statement in Python.""","Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Clarify the purpose of the 'if __name__ == \__main__\"":' statement in Python.""
+### Input:
+What does 'if __name__ == \__main__\"":' mean?""
+### Response:
+It's a Python idiom. If a Python script is run, the '__name__' variable is set to '__main__'. This line checks if the script is being run as the main program."
+How to define a class in Python?,Use the 'class' keyword. For example: class MyClass: def __init__(self): self.attribute = 'value'.,Instruct on defining a class in Python.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Instruct on defining a class in Python.
+### Input:
+How to define a class in Python?
+### Response:
+Use the 'class' keyword. For example: class MyClass: def __init__(self): self.attribute = 'value'."
+How to install a Python library?,You can use pip. For example: pip install library_name.,Detail the steps to install a Python library.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Detail the steps to install a Python library.
+### Input:
+How to install a Python library?
+### Response:
+You can use pip. For example: pip install library_name."
+How to create a virtual environment in Python?,Use the venv module. For example: python3 -m venv myenv.,Describe the process of creating a virtual environment in Python.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Describe the process of creating a virtual environment in Python.
+### Input:
+How to create a virtual environment in Python?
+### Response:
+Use the venv module. For example: python3 -m venv myenv."
+How can I catch exceptions in Python?,"Use a try...except block. For example: try: risky_operation() except Exception as e: print('An error occurred:', e).",Demonstrate how to handle exceptions in Python.,"Below is a question which requires an answer. Write an answer that is as accurate as possible to provide the best possible results in the most effecient amount of code to do so. 
+
+### Instruction:
+Demonstrate how to handle exceptions in Python.
+### Input:
+How can I catch exceptions in Python?
+### Response:
+Use a try...except block. For example: try: risky_operation() except Exception as e: print('An error occurred:', e)."

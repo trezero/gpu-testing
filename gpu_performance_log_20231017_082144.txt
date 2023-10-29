@@ -1,0 +1,114 @@
+=== GPU: 535.113.01 ===
+
+=== Initial GPU Status ===
+Tue Oct 17 08:21:44 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3060 Ti     Off | 00000000:01:00.0  On |                  N/A |
+|  0%   29C    P8              10W / 225W |    740MiB /  8192MiB |      2%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA GeForce GTX 1080        Off | 00000000:04:00.0 Off |                  N/A |
+|  0%   24C    P8               8W / 215W |      6MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A      1586      G   /usr/lib/xorg/Xorg                          352MiB |
+|    0   N/A  N/A      2040      G   /usr/bin/gnome-shell                        146MiB |
+|    0   N/A  N/A    423004      G   ...42253349,6306003392242382034,262144      232MiB |
+|    1   N/A  N/A      1586      G   /usr/lib/xorg/Xorg                            4MiB |
++---------------------------------------------------------------------------------------+
+
+
+
+Command Execution Time: 38.56935381889343 seconds
+
+=== Post Execution GPU Status ===
+Tue Oct 17 08:22:23 2023       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.113.01             Driver Version: 535.113.01   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce RTX 3060 Ti     Off | 00000000:01:00.0  On |                  N/A |
+|  0%   32C    P0              63W / 225W |    741MiB /  8192MiB |      3%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA GeForce GTX 1080        Off | 00000000:04:00.0 Off |                  N/A |
+|  0%   29C    P0              42W / 215W |      6MiB /  8192MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|    0   N/A  N/A      1586      G   /usr/lib/xorg/Xorg                          354MiB |
+|    0   N/A  N/A      2040      G   /usr/bin/gnome-shell                        145MiB |
+|    0   N/A  N/A    423004      G   ...42253349,6306003392242382034,262144      232MiB |
+|    1   N/A  N/A      1586      G   /usr/lib/xorg/Xorg                            4MiB |
++---------------------------------------------------------------------------------------+
+
+=== Errors ===
+⚠️ WARNING | 2023-10-17 08:21:47 | autotrain.cli.run_dreambooth:<module>:14 - ❌ Some DreamBooth components are missing! Please run `autotrain setup` to install it. Ignore this warning if you are not using DreamBooth or running `autotrain setup` already.
+> INFO    Running LLM
+> INFO    Params: Namespace(version=False, train=True, deploy=False, inference=False, data_path='.', train_split='train', valid_split=None, text_column='text', rejected_text_column='rejected', model='mistralai/Mistral-7B-Instruct-v0.1', learning_rate=0.0002, num_train_epochs=3, train_batch_size=6, warmup_ratio=0.1, gradient_accumulation_steps=1, optimizer='adamw_torch', scheduler='linear', weight_decay=0.0, max_grad_norm=1.0, seed=42, add_eos_token=False, block_size=-1, use_peft=True, lora_r=16, lora_alpha=32, lora_dropout=0.05, logging_steps=-1, project_name='my-llm', evaluation_strategy='epoch', save_total_limit=1, save_strategy='epoch', auto_find_batch_size=False, fp16=False, push_to_hub=False, use_int8=False, model_max_length=1024, repo_id=None, use_int4=True, trainer='sft', target_modules='q_proj,v_proj', merge_adapter=False, token=None, backend='default', username=None, use_flash_attention_2=False, disable_gradient_checkpointing=False, func=<function run_llm_command_factory at 0x7f924c90edd0>)
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+> INFO    loading dataset from csv
+> INFO    loading dataset from csv
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Using pad_token, but it is not set yet.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Using pad_token, but it is not set yet.
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Error named symbol not found at line 74 in file /mmfs1/gscratch/zlab/timdettmers/git/bitsandbytes/csrc/ops.cu
+/arrow/cpp/src/arrow/filesystem/s3fs.cc:2829:  arrow::fs::FinalizeS3 was not called even though S3 was initialized.  This could lead to a segmentation fault at exit
+[2023-10-17 08:22:21,990] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 2230856 closing signal SIGTERM
+[2023-10-17 08:22:22,555] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 1 (pid: 2230857) of binary: /home/winadmin/miniconda3/envs/gpuTesting310/bin/python
+Traceback (most recent call last):
+  File "/home/winadmin/miniconda3/envs/gpuTesting310/bin/accelerate", line 8, in <module>
+    sys.exit(main())
+  File "/home/winadmin/miniconda3/envs/gpuTesting310/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 47, in main
+    args.func(args)
+  File "/home/winadmin/miniconda3/envs/gpuTesting310/lib/python3.10/site-packages/accelerate/commands/launch.py", line 977, in launch_command
+    multi_gpu_launcher(args)
+  File "/home/winadmin/miniconda3/envs/gpuTesting310/lib/python3.10/site-packages/accelerate/commands/launch.py", line 646, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/home/winadmin/miniconda3/envs/gpuTesting310/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/home/winadmin/miniconda3/envs/gpuTesting310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/winadmin/miniconda3/envs/gpuTesting310/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+autotrain.trainers.clm FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2023-10-17_08:22:21
+  host      : win-linux-ai
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 2230857)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
