@@ -1,0 +1,2 @@
+DateTime,Source File,gpu_name,whisper_model,performance_metric
+2023-10-29 00:16:31,/mnt/m2media/sampleMedia/EAH1.mp4,NVIDIA GeForce RTX 3060 Ti,tiny.en,35.26x real-time
